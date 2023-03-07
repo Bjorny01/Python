@@ -1,0 +1,51 @@
+# Spec av P-uppgift
+
+# Namn: Björn Åkermark
+# Personnummer: 010507-4074
+# P-uppgift nr: 195
+# Titel: Zoo
+
+
+# **************************** Användargränsnitt ************************
+When started the program should:
+1. Ask the user for the date they want to come
+2. Print what time the zoo is open that day
+3. Ask the user at what time they wanna come/leave
+4. Print out all the animals that are active at that time of the year and print out
+   if any of those animals have feeding time in that time interval
+
+
+# ************************** Minne / Datastruktur ************************
+The animals are stored in a list with:
+1. Names
+2. Feeding-times
+3. What time of the day the animals are awake
+4. What time of the year the animals are active
+
+
+# ***************************** Algoritm *********************************
+The program imports the list of all the animals.
+The program stores the input of the user as a month and a time.
+The program prints out all the active animals and the ones that have feeding time by:
+ 1. checking if they are winter/summer active and compares with the stored value for month
+ 2. checking if the feeing time is in the intervall of the arrival/leaving time the user inputs
+
+
+
+# ************************** Programskelett ******************************
+
+     #**************************** Funktioner *********************************
+     Function to check the date (special dates, wrong formats and so on), returns the month
+     Function to check the time interval the user wants to visit, returns the arrival and leaving time
+     Function to check the animals are active in the given month
+     Function to check if any animals have feeding-time in the given time interval
+
+     #*************** Klasser och dess metoder******************
+     Class: classAnimal with name, awake_time, active_time and feeding_time
+     Methods: get_name, get_awake_time, get_active_time, get_feeding_time
+
+
+     #************ Huvudprogrammet ********************
+Reads data from file and creates a list.
+Compare with the user input.
+Prints out different part of the list depending on the functions of comparing and the users inputs
